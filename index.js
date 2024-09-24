@@ -1,13 +1,8 @@
 #! /usr/bin/env node
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const inquirer_1 = __importDefault(require("inquirer"));
-const answer = await inquirer_1.default.prompt([
-    { message: "Enter  first number", type: "number", name: "firstnumber" },
-    { message: "Enter second number", type: "number", name: "secondnumber" },
+import inquirer from "inquirer";
+const answer = await inquirer.prompt([
+    { message: "Enter your first number", type: "number", name: "firstnumber" },
+    { message: "Enter your second number", type: "number", name: "secondnumber" },
     {
         message: "select one of the operators to perfom action",
         type: "list",
